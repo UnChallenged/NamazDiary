@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.codex.namazdiary.Nafl">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nafl_namaz_remaining"
+            android:textColor="@color/browser_actions_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/viewTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextAdd"
+            android:layout_width="53dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="47dp"
+            android:ems="10"
+            android:inputType="number"
+            app:backgroundTint="@color/colorPrimaryDark"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColor="@android:color/background_dark" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/addbtn"
+            android:text="@string/add_nafl" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextRemove"
+            android:layout_width="53dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:inputType="number"
+            app:backgroundTint="@color/colorPrimaryDark"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColor="@android:color/background_dark" />
+
+
+        <Button
+            android:id="@+id/ButtonRemove"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/addbtn"
+            android:text="Offered Nafl" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adviewnafl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center|bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/others"
+       />
+
+
+</LinearLayout>

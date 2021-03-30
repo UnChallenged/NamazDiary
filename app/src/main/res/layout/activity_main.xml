@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/addbtn"
+            android:text="@string/namaz_status"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/addbtn"
+            android:text="@string/nafl_namaz" />
+
+        <Button
+            android:id="@+id/buttoncn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/addbtn"
+            android:text="@string/counter"
+            android:layout_marginTop="240dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="310dp"
+            android:background="@drawable/addbtn"
+            android:text="@string/set_reminder"
+            android:padding="11dp"
+            android:drawableStart="@drawable/ic_button_setting"
+            android:textColor="@color/colorPrimary" />
+
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adviewmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="@string/others" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

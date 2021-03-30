@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/fajarB"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/textviewfajar"
+                android:visibility="visible"
+                app:srcCompat="@drawable/notification_black">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/fajarG"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/textviewfajar"
+                android:visibility="gone"
+                app:srcCompat="@drawable/notification_green">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/fajarseticon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="70dp"
+                android:layout_toEndOf="@+id/textviewfajar"
+                app:srcCompat="@drawable/set_notification_time">
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/timefajar"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/browser_actions_text_color"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textviewfajar"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/timefajar"
+                android:text="@string/fajar"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/zoharseticon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="70dp"
+                android:layout_toEndOf="@+id/textviewzohar"
+                app:srcCompat="@drawable/set_notification_time">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/zoharB"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/textviewzohar"
+
+                android:visibility="visible"
+                app:srcCompat="@drawable/notification_black">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/zoharG"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/textviewzohar"
+
+                android:visibility="gone"
+                app:srcCompat="@drawable/notification_green">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textviewzohar"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/zohartime"
+                android:text="@string/zohar"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/zohartime"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/browser_actions_text_color"
+                android:textSize="18sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/asarB"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/textviewasar"
+
+                app:srcCompat="@drawable/notification_black">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/asarG"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/textviewasar"
+
+                android:visibility="gone"
+                app:srcCompat="@drawable/notification_green">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/asarseticon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="70dp"
+                android:layout_toEndOf="@+id/textviewasar"
+                app:srcCompat="@drawable/set_notification_time">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/asartime"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/browser_actions_text_color"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textviewasar"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/asartime"
+                android:text="@string/asar"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+
+            <ImageView
+                android:id="@+id/magribB"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/textviewmagrib"
+
+                app:srcCompat="@drawable/notification_black">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/magribG"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/textviewmagrib"
+
+                android:visibility="gone"
+                app:srcCompat="@drawable/notification_green">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/magribseticon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="70dp"
+                android:layout_toEndOf="@+id/textviewmagrib"
+                app:srcCompat="@drawable/set_notification_time">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textviewmagrib"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/magribtime"
+                android:text="@string/magrib"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/magribtime"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/browser_actions_text_color"
+                android:textSize="18sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/eshaB"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/textviewesha"
+
+                app:srcCompat="@drawable/notification_black">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/eshaG"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/textviewesha"
+
+                android:visibility="gone"
+                app:srcCompat="@drawable/notification_green">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/eshaseticon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="70dp"
+                android:layout_toEndOf="@+id/textviewesha"
+                app:srcCompat="@drawable/set_notification_time">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/eshatime"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/browser_actions_text_color"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/textviewesha"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/eshatime"
+                android:text="@string/esha"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp">
+
+            </TextView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:background="#ffffff"
+        android:text="   Reminder   "
+        android:textColor="@android:color/background_dark"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/dailyG"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/dailytime"
+                android:visibility="gone"
+                app:srcCompat="@drawable/notification_green">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/dailytime"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/browser_actions_text_color"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/dailyB"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/dailytime"
+                android:visibility="visible"
+                app:srcCompat="@drawable/notification_black">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/dailyiconsetting"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:srcCompat="@drawable/set_notification_time"
+                android:layout_toEndOf="@+id/dailytime"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="15dp">
+
+            </ImageView>
+
+            <!--<Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/set_time" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:text="@string/switchx"
+                android:textOff="@string/off"
+                android:textOn="@string/on" />-->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="340dp"
+        android:background="#ffffff"
+        android:text="   To submit daily NAMAZ status   "
+        android:textColor="@android:color/background_dark"
+        android:textSize="17sp" />
+</RelativeLayout>

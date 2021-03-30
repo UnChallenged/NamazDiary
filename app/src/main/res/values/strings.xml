@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">NAMAZ Diary</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="admob_app_id">ca-app-pub-7251543573792465~6993234018</string>
+    <string name="alertdialog">ca-app-pub-7251543573792465/6418518945</string>
+
+    <string name="staticactivity">ca-app-pub-7251543573792465/3189720379</string>
+    <string name="others">ca-app-pub-7251543573792465/9792563842</string>
+
+
+    <string name="set_time_before_your_sleeping">Set Time Before Your Sleeping</string>
+    <string name="turn_it_on">Turn it on</string>
+    <string name="don_t_skip_namaz">Don\'t Miss NAMAZ!</string>
+    <string name="switchx">Switch</string>
+    <string name="set_time">Set Time</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="namaz_status">NAMAZ Status</string>
+    <string name="nafl_namaz">NAFL NAMAZ Reminder</string>
+    <string name="kaza_namaz">Missed NAMAZ</string>
+    <string name="fajar">Fajar</string>
+    <string name="add_kaza">Add Missed</string>
+    <string name="kaza_NAMAZ">Remove Missed</string>
+    <string name="esha">Esha</string>
+    <string name="asar">Asar</string>
+    <string name="zohar">Zohar</string>
+    <string name="magrib">Magrib</string>
+    <string name="add_nafl">Nafl To Remember</string>
+    <string name="_0">0</string>
+    <string name="submit">Submit</string>
+    <string name="submit_today_s_namaz_status">You\'ve Offered...</string>
+    <string name="did_you_offer_your_kaza_namaz_tap_here">Offered your Missed NAMAZ? Tap Here!</string>
+    <string name="counter">Counter App</string>
+    <string name="set_reminder">Notification</string>
+    <string name="nafl_namaz_remaining">Nafl NAMAZ remaining :</string>
+</resources>

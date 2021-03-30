@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.unchallenged.mynamaz">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait"
+        tools:replace="android:icon"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name="com.codex.namazdiary.counterapp.Counter"
+            android:label="Counter"
+            android:parentActivityName="com.codex.namazdiary.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.codex.namazdiary.MainActivity"/>
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7251543573792465~6993234018"/>
+
+        <activity
+            android:name="com.codex.namazdiary.Reminder"
+            android:label="Notification"
+            android:parentActivityName="com.codex.namazdiary.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.codex.namazdiary.MainActivity"/>
+
+
+        <activity
+            android:name="com.codex.namazdiary.MainActivity"
+            android:label="NAMAZ Diary"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.codex.namazdiary.AlertDialog"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog.Alert" />
+        <activity
+            android:name="com.codex.namazdiary.KazaNAMAZ"
+            android:label="Kaza Namaz"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog.Alert" />
+        <activity
+            android:name="com.codex.namazdiary.MyStat"
+            android:label="Namaz Status"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.codex.namazdiary.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.codex.namazdiary.ImportKaza"
+            android:label="Add Kaza Namaz"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.codex.namazdiary.MyStat" />
+        </activity>
+        <activity
+            android:name="com.codex.namazdiary.Nafl"
+            android:label="Nafl Namaz"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.codex.namazdiary.MainActivity" />
+        </activity>
+
+        <receiver android:name="com.codex.namazdiary.AlarmReceiverDaily" />
+
+        <receiver android:name="com.codex.namazdiary.FajarReceiver.FajarReceiver" />
+
+        <receiver android:name="com.codex.namazdiary.ZoharReceiver.ZoharReceiver" />
+        <receiver android:name="com.codex.namazdiary.AsarReceiver.AsarReceiver" />
+        <receiver android:name="com.codex.namazdiary.MagribReceiver.MagribReceiver" />
+        <receiver android:name="com.codex.namazdiary.EshaReceiver.EshaReceiver" />
+
+        <receiver android:name="com.codex.namazdiary.FajarReceiver.OkButtonFajar">
+
+        </receiver>
+        <receiver android:name="com.codex.namazdiary.ZoharReceiver.OkButtonZohar">
+
+    </receiver>
+        <receiver android:name="com.codex.namazdiary.AsarReceiver.OkButtonAsar">
+
+    </receiver>
+        <receiver android:name="com.codex.namazdiary.MagribReceiver.OkButtonMagrib">
+
+    </receiver>
+        <receiver android:name="com.codex.namazdiary.EshaReceiver.OkButtonEsha">
+    </receiver>
+
+        <receiver
+            android:name="com.codex.namazdiary.RebootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+
+
+</manifest>
